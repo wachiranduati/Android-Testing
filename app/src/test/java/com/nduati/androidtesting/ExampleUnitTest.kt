@@ -1,4 +1,4 @@
-package com.toponymkenya.androidtesting
+package com.nduati.androidtesting
 
 import org.junit.Test
 

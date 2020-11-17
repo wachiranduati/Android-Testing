@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
@@ -8,7 +9,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "com.toponymkenya.androidtesting"
+        applicationId "com.nduati.androidtesting"
         minSdkVersion 16
         targetSdkVersion 30
         versionCode 1
