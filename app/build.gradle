@@ -46,4 +46,7 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test:rules:1.1.1'
     androidTestImplementation 'com.agoda.kakao:kakao:2.0.0'
+    // enables us to test intents
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.3.0'
+
 }
