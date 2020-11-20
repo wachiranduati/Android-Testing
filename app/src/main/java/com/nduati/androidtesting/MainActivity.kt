@@ -15,9 +15,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_main)
         val btn : Button = findViewById(R.id.main_button)
         val navToPage2 : Button = findViewById(R.id.navigate_to_page2_button)
+        val strtForResultBtn : Button = findViewById(R.id.start_for_result_button)
         mnEdtxt = findViewById(R.id.mainEditText)
         btn.setOnClickListener(this)
         navToPage2.setOnClickListener(this)
+
+        strtForResultBtn.setOnClickListener {
+
+        }
     }
 
     override fun onClick(v: View?) {
