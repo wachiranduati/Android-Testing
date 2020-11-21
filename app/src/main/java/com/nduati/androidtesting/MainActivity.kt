@@ -3,6 +3,7 @@ package com.nduati.androidtesting
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -21,7 +22,16 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         navToPage2.setOnClickListener(this)
 
         strtForResultBtn.setOnClickListener {
+            val forRsltInt = Intent(this, ThirdActivity::class.java)
+            startActivityForResult(forRsltInt, 23)
+        }
+    }
 
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == 23){
+            val gotBack = data?.getStringExtra("RESP")
+            Log.d(Companion.TAG, "onActivityResult: $gotBack")
         }
     }
 
@@ -37,5 +47,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(intent)
             }
         }
+    }
+
+    companion object {
+        private const val TAG = "MainActivity"
     }
 }

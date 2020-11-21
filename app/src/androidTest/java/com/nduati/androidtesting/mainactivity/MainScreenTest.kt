@@ -1,11 +1,14 @@
 package com.nduati.androidtesting.mainactivity
 
+import android.content.Intent
 import androidx.test.espresso.intent.rule.IntentsTestRule
 import androidx.test.filters.LargeTest
 import androidx.test.rule.ActivityTestRule
 import com.agoda.kakao.intent.KIntent
+import com.agoda.kakao.screen.Screen
 import com.nduati.androidtesting.MainActivity
 import com.nduati.androidtesting.SecondActivity
+import com.nduati.androidtesting.ThirdActivity
 import org.junit.Rule
 import org.junit.Test
 
@@ -44,6 +47,24 @@ class MainScreenTest {
                 hasExtra("QUERY", query)
             }
             secondActIntent.intended()
+        }
+    }
+
+    @Test
+    fun ret_text_from_second_activity(){
+        screen{
+            retBtn.click()
+            val recIntent = KIntent{
+                hasComponent(ThirdActivity::class.java.name)
+                withResult {
+                    withCode(23)
+                    withData(
+                            Intent().putExtra("RESP", "Banana man was here")
+                    )
+                }
+            }
+            recIntent.intending()
+
         }
     }
 
