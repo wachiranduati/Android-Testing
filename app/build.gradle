@@ -48,5 +48,8 @@ dependencies {
     androidTestImplementation 'com.agoda.kakao:kakao:2.0.0'
     // enables us to test intents
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.3.0'
+    // testinstrumentation runner
+    testInstrumentationRunner "com.nduati.androidtesting.RecipeTestRunner"
+
 
 }
