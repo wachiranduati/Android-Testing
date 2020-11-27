@@ -16,3 +16,4 @@ The app so far has functionalities to test for
 - Interaction with some of these views
 - Testing for Intents
 - Testing for Intents with returned results
+- Implement Test Runners to mock network calls with populated data
