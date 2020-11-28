@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         val btn : Button = findViewById(R.id.main_button)
         val navToPage2 : Button = findViewById(R.id.navigate_to_page2_button)
         val strtForResultBtn : Button = findViewById(R.id.start_for_result_button)
+        val searchBtn : Button = findViewById(R.id.searchButton)
         mnEdtxt = findViewById(R.id.mainEditText)
         btn.setOnClickListener(this)
         navToPage2.setOnClickListener(this)
@@ -24,6 +25,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         strtForResultBtn.setOnClickListener {
             val forRsltInt = Intent(this, ThirdActivity::class.java)
             startActivityForResult(forRsltInt, 23)
+        }
+
+        searchBtn.setOnClickListener {
+            val intent : Intent = Intent(this, SearchResultsActivity::class.java)
+            intent.putExtra("ingredients", "mangoes, veggies, onions, bananas")
+            startActivity(intent)
         }
     }
 
