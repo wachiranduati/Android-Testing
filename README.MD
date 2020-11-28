@@ -17,3 +17,4 @@ The app so far has functionalities to test for
 - Testing for Intents
 - Testing for Intents with returned results
 - Implement Test Runners to mock network calls with populated data
+- Testing Recyclerviews with a scroll to functionality
