@@ -50,6 +50,9 @@ dependencies {
     androidTestImplementation 'com.agoda.kakao:kakao:2.0.0'
     // enables us to test intents
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.3.0'
+    // enables scrolling in test
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.1.1'
+
 
 
 

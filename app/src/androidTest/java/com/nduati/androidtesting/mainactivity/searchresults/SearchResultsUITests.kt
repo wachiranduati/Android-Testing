@@ -56,5 +56,32 @@ class SearchResultsUITests {
             }
         }
     }
+
+    @Test
+    fun shouldRenderTitleAndFavorite() {
+        screen {
+            recycler {
+                scrollTo(2)
+                childAt<Item>(2){
+                    tOne.hasText("juice")
+                }
+//                for (i in 0..9) {
+//                    // 1
+//                    scrollTo(i)
+//                    childAt<Item>(i) {
+//                        // 2
+//                        tOne.hasText("Title " + (i + 1))
+//                        // 3
+////                        if (i != 1) {
+////                            favButton.hasDrawable(R.drawable.ic_favorite_border_24dp)
+////                        } else {
+////                            favButton.hasDrawable(R.drawable.ic_favorite_24dp)
+////                        }
+//                    }
+//                }
+            }
+        }
+    }
+
 }
 
