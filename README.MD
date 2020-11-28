@@ -3,7 +3,7 @@
 ### PROJECT UNDER CONSTRUCTION
 
 This is my own personal journey exploring
-- UI Testing
+- UI Testing (KAKAO)
 - Integrated Testing
 - Unit Testing
 
