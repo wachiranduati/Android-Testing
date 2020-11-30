@@ -5,7 +5,12 @@ import org.junit.Before
 
 class CalculatorTest : TestCase() {
 
-    val calc = Calculator()
+    lateinit var calc : Calculator
+
+    override fun setUp() {
+        super.setUp()
+        calc = Calculator()
+    }
 
     fun testAddItems() {
         assertEquals(4, calc.addItems(2,2))
