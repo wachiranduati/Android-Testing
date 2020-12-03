@@ -22,8 +22,12 @@ The app so far has functionalities to test for
 - Testing Recyclerviews with a scroll to functionality
 
 ## UNIT TESTING (JUnit)
-This is based loosely on an article by Birat Rai (getting started with testing)<https://medium.com/@biratkirat/getting-started-with-testing-in-android-part-i-64e7fa11be94>
+This is based loosely on an article by
+Birat Rai (getting started with testing)<https://medium.com/@biratkirat/getting-started-with-testing-in-android-part-i-64e7fa11be94>
+Ravi Garbuja Pun https://android.jlelse.eu/writing-your-first-local-unit-test-in-android-b1256cdc1a7
+
 
 This will split the tests in two groups, that is:
 - local tests
 - integration tests
+
