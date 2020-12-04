@@ -15,7 +15,7 @@ class CalculatorTest : TestCase() {
 
     @Test
     fun testAddItems() {
-        assertEquals(4, calc.addItems(2,2))
+        assertEquals("This method is called if the assertion is not true",4, calc.addItems(2,2))
     }
 
 //    @Before
@@ -23,4 +23,7 @@ class CalculatorTest : TestCase() {
 
 //    @After
 //    This is run after the @Test is run
+
+//    @Ignore
+//    This will ignore the @Test
 }
