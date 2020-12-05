@@ -25,9 +25,11 @@ The app so far has functionalities to test for
 This is based loosely on an article by
 Birat Rai (getting started with testing)<https://medium.com/@biratkirat/getting-started-with-testing-in-android-part-i-64e7fa11be94>
 Ravi Garbuja Pun https://android.jlelse.eu/writing-your-first-local-unit-test-in-android-b1256cdc1a7
+Integrated testing is based on technical blogs by Phellipe Silva https://proandroiddev.com/a-guide-to-test-pyramid-in-android-non-instrumented-tests-part-2-627e6a40f0ab
 
 
 This will split the tests in two groups, that is:
 - local tests
 - integration tests
 
+Testing will be based on th
